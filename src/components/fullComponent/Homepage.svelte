@@ -3,10 +3,10 @@
 </script>
 
 <div
-	class="top-0 left-0 min-h-screen h-full flex flex-col justify-between items-center gap-16 py-48 px-12 md:py-56"
+	class="top-0 left-0 min-h-screen h-full flex flex-col items-center gap-16 py-48 px-8 md:py-56"
 >
 	<h1
-		class="min-w-max h-full font-ms font-semibold text-xl bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text sm:text-2xl md:text-3xl lg:text-4xl"
+		class="min-w-max h-full font-ms font-bold text-xl bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text sm:text-2xl md:text-3xl lg:text-4xl"
 	>
 		<span class="text-grayWhite">Hi, my name is</span>&nbsp;&nbsp;<span
 			class="text-5xl bg-gradient-to-tr from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text sm:text-6xl md:text-7xl lg:text-8xl"
@@ -21,7 +21,7 @@
 		<div
 			class="flex flex-col items-center gap-1 font-ms font-medium text-sm text-grayWhite transform transition-all md:text-base hover:translate-y-2"
 		>
-			<h3>See my projects</h3>
+			<h3 class="text-center">See my projects</h3>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				enable-background="new 0 0 24 24"

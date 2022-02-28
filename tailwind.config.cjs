@@ -7,7 +7,7 @@ module.exports = {
         },
         fontFamily: {
             ms: "'Montserrat', 'sans-serif'",
-            rb: "'Roboto', 'sans-serif'"
+            op: "'Open sans', 'sans-serif'"
         }
     },
     plugins: []

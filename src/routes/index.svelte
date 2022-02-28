@@ -7,10 +7,17 @@
 </script>
 
 <div>
-    <Navbar />
+    <nav>
+        <Navbar />
+    </nav>
 
-    <Homepage />
+    <section id="home">
+        <Homepage />
+    </section>
 
-    <About />
+    <section id="about">
+        <About />
+    </section>
+
 </div>
 
