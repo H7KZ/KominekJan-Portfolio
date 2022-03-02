@@ -24,8 +24,15 @@
 	</div>
 	<ul class="font-ms font-semibold text-[#A6B0C7] text-2xl text-center">
 		<li class="m-3"><a href="/" on:click>Home</a></li>
+		<li class="m-3"><a href="/#about" on:click>About</a></li>
 		<li class="m-3"><a href="/#skills" on:click>Skills</a></li>
 		<li class="m-3"><a href="/#projects" on:click>Projects</a></li>
-		<li class="m-3"><a href="/contact" on:click>Contact</a></li>
+		<li class="m-3">
+			<a href="/contact" on:click>
+				<button class="border-2 border-[#c2ff4f] rounded-md font-medium px-3 py-0.5">
+					Contact
+				</button>
+			</a>
+		</li>
 	</ul>
 </div>

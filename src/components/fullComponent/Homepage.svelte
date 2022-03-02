@@ -17,7 +17,6 @@
 		Minecraft Plugin Developer<span class="text-grayWhite">.</span>
 	</h1>
 	<a href="/#projects">
-		<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 		<div
 			class="flex flex-col items-center gap-1 font-ms font-medium text-sm text-grayWhite transform transition-all md:text-base hover:translate-y-2"
 		>
