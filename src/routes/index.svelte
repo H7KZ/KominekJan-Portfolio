@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '/src/components/common/Navbar.svelte';
+    import Navbar from '/src/components/common/Navbar.svelte';
 
     import Homepage from '/src/components/fullComponent/Homepage.svelte';
 
