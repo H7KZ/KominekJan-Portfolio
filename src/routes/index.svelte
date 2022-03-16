@@ -4,20 +4,13 @@
     import Homepage from '/src/components/fullComponent/Homepage.svelte';
 
     import About from '/src/components/fullComponent/About.svelte';
+
+    import Development from '/src/components/fullComponent/Development.svelte';
 </script>
 
 <div>
-    <nav>
-        <Navbar />
-    </nav>
-
     <section id="home">
-        <Homepage />
+        <Development />
     </section>
-
-    <section id="about">
-        <About />
-    </section>
-
 </div>
 
