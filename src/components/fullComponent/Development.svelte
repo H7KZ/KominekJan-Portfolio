@@ -17,7 +17,7 @@
 		>
 			<span class="text-grayWhite">if you want to</span><br />
 			see the site in development<br />
-			<span class="italic text-grayWhite"><a href="https://dev.kominekjan.cz/">click here</a></span>
+			<span class="italic text-grayWhite"><a href="https://dev.kominekjan.pages.dev/">click here</a></span>
 		</h3>
 	</div>
 </div>
