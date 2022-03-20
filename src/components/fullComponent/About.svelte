@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-12 pt-16">
 	<div class="w-full flex justify-center text-4xl md:text-5xl">
 		<h1
 			class="w-min font-ms font-semibold bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase"

@@ -3,9 +3,8 @@
 
 	let fillColor = '#f5f9ff';
 
-	let svgBg;
-
 	onMount(() => {
+		let svgBg = document.getElementById('svgBg');
 		window.addEventListener('scroll', () => {
 			let value = window.scrollY;
 			svgBg.style.top = value * 0.6 + 'px';
@@ -13,7 +12,7 @@
 	});
 </script>
 
-<div class="top-0 left-0 min-h-screen h-full flex flex-col items-center gap-16 py-48 px-8 md:py-56">
+<div class="top-0 left-0 min-h-screen h-full flex flex-col items-center gap-16 pt-48 px-8 md:pt-56">
 	<h1
 		class="min-w-max h-full font-ms font-bold text-xl bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text sm:text-2xl md:text-3xl lg:text-4xl"
 	>
@@ -43,14 +42,12 @@
 		</div>
 	</a>
 </div>
-<div>
-	
-</div>
+<div />
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 1440 560"
 	class="heightAbs absolute top-0 left-0 w-full -z-10"
-	bind:this={svgBg}
+	id="svgBg"
 >
 	<g mask="url(&quot;#SvgjsMask1183&quot;)" fill="none">
 		<path
