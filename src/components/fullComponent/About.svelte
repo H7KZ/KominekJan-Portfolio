@@ -42,8 +42,8 @@
 			<span class="font-semibold italic text-[#cbff6a]"
 				>tailwindCSS, TypeScript and framework Svelte</span
 			>.<br />
-			I am <span class="font-semibold italic text-[#cbff6a]">able to create any website</span> the cliente
-			have in mind & I do like when cliente have ideas that they want to digitalize.
+			I am <span class="font-semibold italic text-[#cbff6a]">able to create any website</span> the client
+			have in mind & I do like when client have ideas that they want to digitalize.
 		</p>
 		<p class="max-w-[32rem]">
 			<svg
@@ -76,7 +76,7 @@
 			<span class="font-semibold italic text-[#cbff6a]">smaller / medium size plugins</span>
 			that aren't much complicated and could be completed in
 			<span class="font-semibold italic text-[#cbff6a]"
-				>shorter amounth of time to satisfy the customer</span
+				>shorter amount of time to satisfy the customer</span
 			>.
 		</p>
 		<p class="max-w-[32rem]">
@@ -91,7 +91,7 @@
 			>
 			Currently I am studying a <span class="font-semibold italic text-[#cbff6a]">2nd year</span> of
 			<span class="font-semibold italic text-[#cbff6a]">IT/Cyber Security</span>
-			at high school in Czech Republic. Here I have gained
+			at high school in the Czech Republic. Here I have gained
 			<span class="font-semibold italic text-[#cbff6a]">knowledge</span>
 			of
 			<span class="font-semibold italic text-[#cbff6a]"
