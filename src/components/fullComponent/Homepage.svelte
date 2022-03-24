@@ -3,8 +3,9 @@
 
 	let fillColor = '#f5f9ff';
 
+	let svgBg;
+
 	onMount(() => {
-		let svgBg = document.getElementById('svgBg');
 		window.addEventListener('scroll', () => {
 			let value = window.scrollY;
 			svgBg.style.top = value * 0.6 + 'px';
@@ -48,6 +49,7 @@
 	viewBox="0 0 1440 560"
 	class="heightAbs absolute top-0 left-0 w-full -z-10"
 	id="svgBg"
+	bind:this={svgBg}
 >
 	<g mask="url(&quot;#SvgjsMask1183&quot;)" fill="none">
 		<path
