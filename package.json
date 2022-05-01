@@ -33,6 +33,7 @@
   },
   "type": "module",
   "dependencies": {
-    "chart.js": "^3.7.1"
+    "chart.js": "^3.7.1",
+    "swiper": "^8.1.4"
   }
 }

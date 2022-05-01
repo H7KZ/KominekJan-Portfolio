@@ -5,7 +5,7 @@
 
 	import Skills from '/src/components/fullComponent/Skills.svelte';
 
-	import Development from '/src/components/fullComponent/Development.svelte';
+	import Projects from '/src/components/fullComponent/Projects.svelte';
 </script>
 
 <div class="pb-24">
@@ -19,5 +19,9 @@
 
 	<section id="skills">
 		<Skills />
+	</section>
+
+	<section id="projects">
+		<Projects />
 	</section>
 </div>
