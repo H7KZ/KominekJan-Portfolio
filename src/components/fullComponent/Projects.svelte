@@ -31,12 +31,12 @@
 	];
 </script>
 
-<div class="w-full flex flex-col gap-8 items-center pt-32">
+<div class="w-full flex flex-col gap-8 items-center">
     <div class="w-full flex flex-col items-center text-4xl md:text-5xl">
 		<h1
-			class="font-ms font-semibold bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase"
+			class="text-center font-ms font-semibold bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase"
 		>
-			My Skills
+			My Projects
 		</h1>
         <p class="font-op text-xl text-grayWhite md:text-3xl">
             (It is a carousel)

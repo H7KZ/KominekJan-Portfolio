@@ -69,7 +69,7 @@
 	});
 </script>
 
-<div class="w-full h-full flex flex-col gap-8 pt-32">
+<div class="w-full h-full flex flex-col gap-8">
 	<div class="w-full flex justify-center text-4xl md:text-5xl">
 		<h1
 			class="font-ms font-semibold bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase"

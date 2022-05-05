@@ -6,22 +6,28 @@
 	import Skills from '/src/components/fullComponent/Skills.svelte';
 
 	import Projects from '/src/components/fullComponent/Projects.svelte';
+
+	import Footer from '/src/components/common/Footer.svelte';
 </script>
 
-<div class="pb-24">
-	<section id="home">
+<div>
+	<section id="home" class="pt-48 md:pt-56">
 		<Homepage />
 	</section>
 
-	<section id="about">
+	<section id="about" class="pt-16">
 		<About />
 	</section>
 
-	<section id="skills">
+	<section id="skills" class="pt-32">
 		<Skills />
 	</section>
 
-	<section id="projects">
+	<section id="projects" class="pt-32">
 		<Projects />
+	</section>
+
+	<section class="pt-24">
+		<Footer />
 	</section>
 </div>
