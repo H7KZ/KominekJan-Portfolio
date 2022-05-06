@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 
 	let fillColor = '#f5f9ff';
 
-	let svgBg;
+	let svgBg: SVGSVGElement;
 
 	onMount(() => {
 		window.addEventListener('scroll', () => {

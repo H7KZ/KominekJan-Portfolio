@@ -49,22 +49,25 @@
 			>
 		</a>
 	</div>
-	<div class="flex gap-6 text-center capitalize pt-6 text-[#c2ff4f]">
+	<div class="flex flex-col gap-2	items-center text-center capitalize pt-6 text-[#c2ff4f] sm:flex-row sm:gap-6">
 		<a href="/" class="transition-colors ease-out duration-150 text-[#fff] hover:text-[#c2ff4f]">
 			Home
 		</a>
-		|
+		<p class="hidden sm:block">|</p>
+		<div class="w-1/2 h-0.5 bg-[#c2ff4f] sm:hidden" />
 		<a
 			href="/contact"
 			class="transition-colors ease-out duration-150 text-[#fff] hover:text-[#c2ff4f]">Contact</a
 		>
-		|
+		<p class="hidden sm:block">|</p>
+		<div class="w-1/2 h-0.5 bg-[#c2ff4f] sm:hidden" />
 		<a
 			href="https://github.com/H7KZ/H7KZ-Portfolio-upgraded"
 			class="transition-colors ease-out duration-150 text-[#fff] hover:text-[#c2ff4f]"
 			>Source code</a
 		>
-		|
+		<p class="hidden sm:block">|</p>
+		<div class="w-1/2 h-0.5 bg-[#c2ff4f] sm:hidden" />
 		<a
 			href="https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209/"
 			class="transition-colors ease-out duration-150 text-[#fff] hover:text-[#c2ff4f]"

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Contact from '/src/components/fullComponent/Contact.svelte';
 
 	import Footer from '/src/components/common/Footer.svelte';

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Homepage from '/src/components/fullComponent/Homepage.svelte';
 
 	import About from '/src/components/fullComponent/About.svelte';
