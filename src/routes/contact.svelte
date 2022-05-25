@@ -4,7 +4,7 @@
 	import Footer from '/src/components/common/Footer.svelte';
 </script>
 
-<div>
+<div class="pt-20">
 	<section>
 		<Contact />
 	</section>
