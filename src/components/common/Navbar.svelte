@@ -1,9 +1,9 @@
 <script lang="ts">
 	import MobileNavbar from '/src/components/common/MobileNavbar.svelte';
 
-	let fillColor = '#C1C8D8';
+	let fillColor: string = '#C1C8D8';
 
-	let showMobileNavbar = false;
+	let showMobileNavbar: boolean = false;
 </script>
 
 <div
@@ -11,24 +11,38 @@
 >
 	<div class="w-full hidden md:flex flex-row items-center justify-between font-ms text-[#eaf2ff]">
 		<div class="font-bold text-grayWhite text-2xl uppercase">
-			<h1>komínekjan</h1>
+			<a href="/">
+				<h1>komínekjan</h1>
+			</a>
 		</div>
 		<div class="flex gap-6 items-center font-medium text-xl">
+			<div>
+				<a href="/" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">Home</a>
+			</div>
 
-			<div><a href="/" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">Home</a></div>
+			<div>
+				<a href="/#about" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]"
+					>About</a
+				>
+			</div>
 
-			<div><a href="/#about" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">About</a></div>
-			
-			<div><a href="/#skills" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">Skills</a></div>
+			<div>
+				<a href="/#skills" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]"
+					>Skills</a
+				>
+			</div>
 
-			<div><a href="/#projects" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">Projects</a></div>
+			<div>
+				<a href="/#projects" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]"
+					>Projects</a
+				>
+			</div>
 
 			<a href="/contact" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">
 				<button class="border-2 border-[#c2ff4f] rounded-md font-medium px-3 py-0.5">
 					Contact
 				</button>
 			</a>
-			
 		</div>
 	</div>
 	<div class="w-full flex items-center justify-end md:hidden">
