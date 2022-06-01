@@ -61,7 +61,9 @@
 			</div>
 		</div>
 		<div class="lg:w-1/2">
-			<img src="contact/card_gif.gif" alt="" class="w-full lg:max-w-sm hidden rounded-2xl lg:block" />
+			<video autoplay muted loop class="w-full lg:max-w-sm hidden rounded-2xl lg:block">
+				<source src="contact/card_gif.webm" type="video/webm"/>
+			</video>
 		</div>
 	</div>
 </div>
