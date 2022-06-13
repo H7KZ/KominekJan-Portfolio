@@ -1,13 +1,13 @@
 <script lang="ts">
-	import Homepage from '/src/components/fullComponent/Homepage.svelte';
+	import Homepage from '/src/lib/pages/Homepage.svelte';
 
-	import About from '/src/components/fullComponent/About.svelte';
+	import About from '/src/lib/pages/About.svelte';
 
-	import Skills from '/src/components/fullComponent/Skills.svelte';
+	import Skills from '/src/lib/pages/Skills.svelte';
 
-	import Projects from '/src/components/fullComponent/Projects.svelte';
+	import Projects from '/src/lib/pages/Projects.svelte';
 
-	import Footer from '/src/components/common/Footer.svelte';
+	import Footer from '/src/lib/components/Footer.svelte';
 </script>
 
 <div>
