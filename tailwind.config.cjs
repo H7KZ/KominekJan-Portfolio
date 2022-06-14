@@ -3,7 +3,8 @@ module.exports = {
 	theme: {
 		colors: {
 			lighterBlack: '#040E1C',
-			grayWhite: '#f5f9ff'
+			grayWhite: '#f5f9ff',
+			YellowGreen: '#cbff6a'
 		},
 		fontFamily: {
 			ms: "'Montserrat', 'sans-serif'",

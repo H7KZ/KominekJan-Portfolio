@@ -1,11 +1,9 @@
+<script>
+import Header from "$lib/components/Header.svelte";
+
+</script>
 <div class="flex flex-col items-center gap-12">
-	<div class="w-full flex justify-center text-4xl md:text-5xl">
-		<h1
-			class="w-min font-ms font-semibold bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase"
-		>
-			about
-		</h1>
-	</div>
+	<Header name="about" />
 	<div
 		class="grid grid-cols-1 justify-items-center gap-6 font-op font-medium text-sm text-grayWhite px-8 sm:text-base md:grid-cols-2 md:gap-10 md:w-4/5"
 	>
@@ -20,9 +18,9 @@
 				/></svg
 			>
 			Hello, I am a
-			<span class="font-semibold italic text-[#cbff6a]">freelance Front-end Developer</span>,
-			<span class="font-semibold italic text-[#cbff6a]">Minecraft Plugin Developer</span>
-			and <span class="font-semibold italic text-[#cbff6a]">student of Cyber Security</span> at SSPŠ.
+			<span class="font-semibold italic text-YellowGreen">freelance Front-end Developer</span>,
+			<span class="font-semibold italic text-YellowGreen">Minecraft Plugin Developer</span>
+			and <span class="font-semibold italic text-YellowGreen">student of Cyber Security</span> at SSPŠ.
 		</p>
 		<p class="max-w-[32rem]">
 			<svg
@@ -34,15 +32,15 @@
 					d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"
 				/></svg
 			>
-			As a <span class="font-semibold italic text-[#cbff6a]">Front-end Developer</span> I have
-			<span class="font-semibold italic text-[#cbff6a]">~2 year experience</span>
+			As a <span class="font-semibold italic text-YellowGreen">Front-end Developer</span> I have
+			<span class="font-semibold italic text-YellowGreen">~2 year experience</span>
 			in
-			<span class="font-semibold italic text-[#cbff6a]">HTML, CSS, JS</span>. And then
-			<span class="font-semibold italic text-[#cbff6a]">~1 year experience</span> in
-			<span class="font-semibold italic text-[#cbff6a]"
+			<span class="font-semibold italic text-YellowGreen">HTML, CSS, JS</span>. And then
+			<span class="font-semibold italic text-YellowGreen">~1 year experience</span> in
+			<span class="font-semibold italic text-YellowGreen"
 				>tailwindCSS, TypeScript and framework Svelte</span
 			>.<br />
-			I am <span class="font-semibold italic text-[#cbff6a]">able to create any website</span> the client
+			I am <span class="font-semibold italic text-YellowGreen">able to create any website</span> the client
 			have in mind & I do like when client have ideas that they want to digitalize.
 		</p>
 		<p class="max-w-[32rem]">
@@ -69,13 +67,13 @@
 					d="M16.41,21.32a29.75,29.75,0,0,1-9.14.14s.46.38,2.84.53c3.61.23,9.15-.12,9.29-1.83C19.4,20.16,19.14,20.8,16.41,21.32Z"
 				/></svg
 			>
-			In my <span class="font-semibold italic text-[#cbff6a]">Minecraft Plugin Developer</span>
-			career I have <span class="font-semibold italic text-[#cbff6a]">~1 year experience</span> of
-			<span class="font-semibold italic text-[#cbff6a]">Java and Spigot API</span>.<br />
+			In my <span class="font-semibold italic text-YellowGreen">Minecraft Plugin Developer</span>
+			career I have <span class="font-semibold italic text-YellowGreen">~1 year experience</span> of
+			<span class="font-semibold italic text-YellowGreen">Java and Spigot API</span>.<br />
 			I like to work on
-			<span class="font-semibold italic text-[#cbff6a]">smaller / medium size plugins</span>
+			<span class="font-semibold italic text-YellowGreen">smaller / medium size plugins</span>
 			that aren't much complicated and could be completed in
-			<span class="font-semibold italic text-[#cbff6a]"
+			<span class="font-semibold italic text-YellowGreen"
 				>shorter amount of time to satisfy the customer</span
 			>.
 		</p>
@@ -89,12 +87,12 @@
 					d="M21 3h-7a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 3H3a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1h5.758c.526 0 1.042.214 1.414.586l1.121 1.121c.009.009.021.012.03.021.086.079.182.149.294.196h.002a.996.996 0 0 0 .762 0h.002c.112-.047.208-.117.294-.196.009-.009.021-.012.03-.021l1.121-1.121A2.015 2.015 0 0 1 15.242 20H21a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.758 18H4V5h6c.552 0 1 .449 1 1v12.689A4.032 4.032 0 0 0 8.758 18zM20 18h-4.758c-.799 0-1.584.246-2.242.689V6c0-.551.448-1 1-1h6v13z"
 				/></svg
 			>
-			Currently I am studying a <span class="font-semibold italic text-[#cbff6a]">2nd year</span> of
-			<span class="font-semibold italic text-[#cbff6a]">IT/Cyber Security</span>
+			Currently I am studying a <span class="font-semibold italic text-YellowGreen">2nd year</span> of
+			<span class="font-semibold italic text-YellowGreen">IT/Cyber Security</span>
 			at high school in the Czech Republic. Here I have gained
-			<span class="font-semibold italic text-[#cbff6a]">knowledge</span>
+			<span class="font-semibold italic text-YellowGreen">knowledge</span>
 			of
-			<span class="font-semibold italic text-[#cbff6a]"
+			<span class="font-semibold italic text-YellowGreen"
 				>programming language C#, Hardware, Linux, Bash...</span
 			> and much more.
 		</p>

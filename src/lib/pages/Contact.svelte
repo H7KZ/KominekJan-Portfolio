@@ -1,5 +1,5 @@
 <div class="h-full min-h-screen w-full flex flex-col items-center">
-	<div class="w-4/5 max-w-6xl mt-32 px-5 py-3 rounded-xl border-4 bg-[#1d1d1d] border-[#cbff6a] flex flex-row justify-items-center gap-12 sm:px-10 sm:py-6 md:rounded-3xl md:border-8 md:px-28 md:py-20">
+	<div class="w-4/5 max-w-6xl mt-32 px-5 py-3 rounded-xl border-4 bg-[#1d1d1d] border-YellowGreen flex flex-row justify-items-center gap-12 sm:px-10 sm:py-6 md:rounded-3xl md:border-8 md:px-28 md:py-20">
 		<div class="w-full h-full flex flex-col items-start gap-4 lg:w-1/2">
 			<h1
 				class="font-ms font-semibold text-3xl bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase"
