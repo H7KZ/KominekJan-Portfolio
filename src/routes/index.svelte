@@ -1,13 +1,13 @@
 <script lang="ts">
-	import Homepage from '/src/lib/pages/Homepage.svelte';
+	import Homepage from '$lib/pages/Homepage.svelte';
 
-	import About from '/src/lib/pages/About.svelte';
+	import About from '$lib/pages/About.svelte';
 
-	import Skills from '/src/lib/pages/Skills.svelte';
+	import Skills from '$lib/pages/Skills.svelte';
 
-	import Projects from '/src/lib/pages/Projects.svelte';
+	import Projects from '$lib/pages/Projects.svelte';
 
-	import Footer from '/src/lib/components/Footer.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div>

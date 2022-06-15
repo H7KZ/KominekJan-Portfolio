@@ -3,8 +3,14 @@
 
 	import { onMount } from 'svelte';
 
-    export let skillLabels = [];
-    export let skillData = [];
+	import skillList from '$lib/data/skills';
+
+	let skillLabels = [];
+	let skillData = [];
+	skillList.forEach((skill) => {
+		skillLabels.push(skill.technology);
+		skillData.push(skill.points);
+	});
 
 	onMount(() => {
 		let grd = document

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Contact from '/src/lib/pages/Contact.svelte';
+	import Contact from '$lib/pages/Contact.svelte';
 
-	import Footer from '/src/lib/components/Footer.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <div class="pt-20">

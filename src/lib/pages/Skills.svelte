@@ -4,13 +4,6 @@
 	import GraphChart from '$lib/components/GraphChart.svelte';
 
 	import skillList from '$lib/data/skills';
-
-	let skillLabels = [];
-	let skillData = [];
-	skillList.forEach((skill) => {
-		skillLabels.push(skill.technology);
-		skillData.push(skill.points);
-	});
 </script>
 
 <div class="w-full h-full flex flex-col gap-8">
@@ -34,6 +27,6 @@
 				</ul>
 			</div>
 		</div>
-		<GraphChart skillLabels={skillLabels} skillData={skillData} />
+		<GraphChart />
 	</div>
 </div>

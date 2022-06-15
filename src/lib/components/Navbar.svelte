@@ -1,5 +1,6 @@
 <script lang="ts">
-	import MobileNavbar from '/src/lib/components/MobileNavbar.svelte';
+	import MobileNavbar from '$lib/components/MobileNavbar.svelte';
+	import NavbarLinks from './NavbarLinks.svelte';
 
 	let fillColor: string = '#C1C8D8';
 
@@ -16,27 +17,7 @@
 			</a>
 		</div>
 		<div class="flex gap-6 items-center font-medium text-xl">
-			<div>
-				<a href="/" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">Home</a>
-			</div>
-
-			<div>
-				<a href="/#about" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]"
-					>About</a
-				>
-			</div>
-
-			<div>
-				<a href="/#skills" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]"
-					>Skills</a
-				>
-			</div>
-
-			<div>
-				<a href="/#projects" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]"
-					>Projects</a
-				>
-			</div>
+			<NavbarLinks />
 
 			<a href="/contact" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">
 				<button class="border-2 border-[#c2ff4f] rounded-md font-medium px-3 py-0.5">

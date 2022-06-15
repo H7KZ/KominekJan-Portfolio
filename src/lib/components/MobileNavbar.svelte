@@ -1,7 +1,7 @@
 <script lang="ts">
-	export let showMobileNavbar = false;
+	import MobileNavbarLinks from './MobileNavbarLinks.svelte';
 
-	let fillColor: string = '#C1C8D8';
+	export let showMobileNavbar = false;
 </script>
 
 <div
@@ -13,7 +13,7 @@
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 24 24"
-			style="fill: {fillColor};"
+			style="fill: #C1C8D8;"
 			class="h-12"
 			on:click
 		>
@@ -23,10 +23,7 @@
 		</svg>
 	</div>
 	<ul class="font-ms font-semibold text-[#A6B0C7] text-2xl text-center">
-		<li class="m-3"><a href="/" on:click>Home</a></li>
-		<li class="m-3"><a href="/#about" on:click>About</a></li>
-		<li class="m-3"><a href="/#skills" on:click>Skills</a></li>
-		<li class="m-3"><a href="/#projects" on:click>Projects</a></li>
+		<MobileNavbarLinks />
 		<li class="m-3">
 			<a href="/contact" on:click>
 				<button class="border-2 border-[#c2ff4f] rounded-md font-medium px-3 py-0.5">
