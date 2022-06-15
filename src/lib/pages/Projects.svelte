@@ -21,7 +21,7 @@
 
 <div class="w-full flex flex-col gap-8 items-center">
 	<Header name="my projects" />
-	<div class="	w-5/6 max-w-5xl flex flex-col items-center gap-12 sm:flex-row sm:items-start">
+	<div class="w-5/6 max-w-5xl flex flex-col items-center gap-12 sm:flex-row sm:items-start">
 		{#each projectList as projectListColumn}
 			<div class="flex flex-col gap-12 w-5/6 sm:w-1/2">
 				{#each projectListColumn as project}

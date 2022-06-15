@@ -18,7 +18,7 @@ const projects = [
         description:
             'A final school project for subject programming. This project was made with Typescript, MongoDB, ExpressJS, Svelte, TailwindCSS.',
         image: '/projects/chatapp.webp',
-        link: 'https://chat.kominekjan.cz/',
+        link: 'https://chat.kominekjan.cz',
         linkName: 'chat.kominekjan.cz'
     }
 ];
