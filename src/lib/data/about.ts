@@ -17,11 +17,12 @@ const aboutListRaw = [
 	}
 ];
 
-let aboutList = [];
+const aboutList = [];
 
 for (let i = 0; i < aboutListRaw.length; i++) {
-    let aboutRaw = aboutListRaw[i];
+	const aboutRaw = aboutListRaw[i];
 
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore
 	aboutRaw.text = aboutRaw.text.split('*');
 

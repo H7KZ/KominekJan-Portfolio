@@ -1,3 +1,4 @@
+<!--suppress TypeScriptUnresolvedFunction -->
 <script lang="ts">
 	import Chart from 'chart.js/auto/auto.js';
 
@@ -21,7 +22,7 @@
 		grd.addColorStop(0, '#EFFF3A');
 		grd.addColorStop(1, '#00ffc3d2');
 
-		const myChart = new Chart(document.getElementById('chart'), {
+		new Chart(document.getElementById('chart'), {
 			type: 'radar',
 			data: {
 				labels: skillLabels,

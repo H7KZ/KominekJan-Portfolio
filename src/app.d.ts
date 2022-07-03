@@ -3,11 +3,6 @@
 // See https://kit.svelte.dev/docs/typescript
 // for information about these interfaces
 declare namespace App {
-	interface Locals {}
-
-	interface Platform {}
-
+	// eslint-disable-next-line @typescript-eslint/no-empty-interface
 	interface Session {}
-
-	interface Stuff {}
 }

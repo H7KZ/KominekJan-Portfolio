@@ -11,19 +11,19 @@
 </script>
 
 <div>
-	<section id="home" class="pt-48 md:pt-56">
+	<section class="pt-48 md:pt-56" id="home">
 		<Homepage />
 	</section>
 
-	<section id="about" class="pt-16">
+	<section class="pt-16" id="about">
 		<About />
 	</section>
 
-	<section id="skills" class="pt-32">
+	<section class="pt-32" id="skills">
 		<Skills />
 	</section>
 
-	<section id="projects" class="pt-32">
+	<section class="pt-32" id="projects">
 		<Projects />
 	</section>
 

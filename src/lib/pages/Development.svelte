@@ -11,13 +11,15 @@
 			but this site <span class="text-grayWhite">is</span><br />
 			still in development<span class="text-grayWhite">.</span><br />
 		</h1>
-		<img src="cute.png" alt="cute" class="h-32" />
+		<img alt="cute" class="h-32" src="cute.png" />
 		<h3
 			class="font-ms font-bold text-base bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text sm:text-lg md:text-xl lg:text-2xl"
 		>
 			<span class="text-grayWhite">if you want to</span><br />
 			see the site in development<br />
-			<span class="italic text-grayWhite"><a href="https://dev.kominekjan.pages.dev/">click here</a></span>
+			<span class="italic text-grayWhite"
+				><a href="https://dev.kominekjan.pages.dev/">click here</a></span
+			>
 		</h3>
 	</div>
 </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let name: string = "";
+	export let name = '';
 </script>
 
 <div class="w-full flex flex-col items-center text-4xl md:text-5xl">

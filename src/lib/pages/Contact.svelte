@@ -21,10 +21,12 @@
 				<ContactIcons />
 			</div>
 		</div>
-		<div class="lg:w-1/2">
-			<video autoplay muted loop class="w-full lg:max-w-sm hidden rounded-2xl lg:block">
-				<source src="contact/card_gif.webm" type="video/webm" />
-			</video>
+		<div class="hidden lg:block lg:w-1/2">
+			<img
+				alt="contact_pic"
+				class="h-full object-cover hidden rounded-2xl lg:block"
+				src="contact/contact.webp"
+			/>
 		</div>
 	</div>
 </div>

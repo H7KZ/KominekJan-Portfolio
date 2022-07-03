@@ -2,9 +2,9 @@
 	import MobileNavbar from '$lib/components/MobileNavbar.svelte';
 	import NavbarLinks from './NavbarLinks.svelte';
 
-	let fillColor: string = '#C1C8D8';
+	let fillColor = '#C1C8D8';
 
-	let showMobileNavbar: boolean = false;
+	let showMobileNavbar = false;
 </script>
 
 <div
@@ -19,7 +19,7 @@
 		<div class="flex gap-6 items-center font-medium text-xl">
 			<NavbarLinks />
 
-			<a href="/contact" class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]">
+			<a class="transition-colors ease-out duration-150 hover:text-[#c2ff4f]" href="/contact">
 				<button class="border-2 border-[#c2ff4f] rounded-md font-medium px-3 py-0.5">
 					Contact
 				</button>
@@ -28,14 +28,14 @@
 	</div>
 	<div class="w-full flex items-center justify-end md:hidden">
 		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 24 24"
-			style="fill: {fillColor};"
 			class="h-12 cursor-pointer"
 			on:click={() => (showMobileNavbar = true)}
+			style="fill: {fillColor};"
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
 		>
 			<path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z" />
 		</svg>
 	</div>
 </div>
-<MobileNavbar {showMobileNavbar} on:click={() => (showMobileNavbar = false)} />
+<MobileNavbar on:click={() => (showMobileNavbar = false)} {showMobileNavbar} />

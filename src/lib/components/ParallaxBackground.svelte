@@ -12,13 +12,13 @@
 </script>
 
 <svg
-	xmlns="http://www.w3.org/2000/svg"
-	viewBox="0 0 1440 560"
+	bind:this={svgBg}
 	class="heightAbs absolute top-0 left-0 w-full -z-10"
 	id="svgBg"
-	bind:this={svgBg}
+	viewBox="0 0 1440 560"
+	xmlns="http://www.w3.org/2000/svg"
 >
-	<g mask="url(&quot;#SvgjsMask1183&quot;)" fill="none">
+	<g fill="none" mask="url(&quot;#SvgjsMask1183&quot;)">
 		<path
 			d="M -14.108717807539733,202 C 81.89,229 273.89,335 465.89128219246027,337 C 657.89,339 753.89,195.8 945.8912821924603,212 C 1137.89,228.2 1233.89,422.4 1425.8912821924603,418 C 1617.89,413.6 1903.07,205.2 1905.8912821924603,190 C 1908.71,174.8 1533.18,311.6 1440,342"
 			stroke="rgba(170, 223, 30, 0.21)"
@@ -47,7 +47,7 @@
 	</g>
 	<defs>
 		<mask id="SvgjsMask1183">
-			<rect width="1440" height="560" fill="#ffffff" />
+			<rect fill="#ffffff" height="560" width="1440" />
 		</mask>
 	</defs>
 </svg>
