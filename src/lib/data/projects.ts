@@ -2,13 +2,13 @@ const projects = [
 	{
 		title: 'Frontend for crypto site',
 		description:
-			'A site where I created landing page, login & singup page and dashboard. This entire job was done in framework Svelte and CSS framework TailwindCSS. Everything on the site is responsive and easily editable.',
+			'Cryptolounge is a website for managing crypto. My own work is landing page, login & singup page and dashboard for crypto. The entire site is in framework Svelte combined with CSS framework TailwindCSS.',
 		image: '/projects/cryptolounge.webp'
 	},
 	{
 		title: 'Admin role minecraft plugin',
 		description:
-			'A minecraft plugin that allows players to change from normal mode to admin mode. It saves the player inventory, armor, experiences etc. and then gives it back when player changes to the normal mode. It has an own configuration to specify which fields to save, to what gamemode to change. This plugin works with luckPerms and EssentialsX/EssentialsX Chat.',
+			'Minecraft plugin that allows players to change from normal mode to admin mode. Saves player\'s inventory, armor, experiences... then returns it back on change. This plugin works with luckPerms API and EssentialsX/EssentialsX Chat.',
 		image: '/projects/minecraft.webp',
 		link: 'https://github.com/H7KZ/AdminRole',
 		linkName: 'github.com/H7KZ/AdminRole'
@@ -16,10 +16,18 @@ const projects = [
 	{
 		title: 'Frontend & backend of chat application',
 		description:
-			'A final school project for subject programming. This project was made with Typescript, MongoDB, ExpressJS, Svelte, TailwindCSS.',
+			'My school finals on subject programming. It is a fullstack web chat app. Took a lot of effort which paid off. I am very happy I made it work. It is made in Typescript, MongoDB, ExpressJS, Svelte and TailwindCSS.',
 		image: '/projects/chatapp.webp',
 		link: 'https://chat.kominekjan.cz',
 		linkName: 'chat.kominekjan.cz'
+	},
+	{
+		title: 'Extraordinary Gifts',
+		description:
+			'Minecraft plugin that implements creation of gifts. It has built-in GUI and more extended configuration than other plugins. It is the perfect solution for survival servers that want to spice up their gameplay.',
+		video: '/projects/extraordinaryGifts.mp4',
+		link: 'https://github.com/H7KZ/ExtraordinaryGifts',
+		linkName: 'github.com/H7KZ/ExtraordinaryGifts'
 	}
 ];
 

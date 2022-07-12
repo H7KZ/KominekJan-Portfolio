@@ -23,6 +23,7 @@
 		{#each projectListColumn as project}
 			<ProjectCard
 				image={project.image}
+				video={project.video}
 				title={project.title}
 				description={project.description}
 				link={project.link}
