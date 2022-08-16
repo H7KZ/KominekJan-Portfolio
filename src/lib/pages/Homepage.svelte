@@ -3,7 +3,6 @@
 	import ParallaxBackground from '$lib/components/ParallaxBackground.svelte';
 	import ProjectArrowLink from '$lib/components/ProjectArrowLink.svelte';
 	import plugins from '$lib/data/byteMdPlugins';
-	import readMd from '$lib/data/readMd';
 
 	import { Viewer } from 'bytemd';
 
