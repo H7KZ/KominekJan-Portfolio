@@ -1,6 +1,20 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import ParallaxBackground from '$lib/components/ParallaxBackground.svelte';
 	import ProjectArrowLink from '$lib/components/ProjectArrowLink.svelte';
+	import plugins from '$lib/data/byteMdPlugins';
+	import readMd from '$lib/data/readMd';
+
+	import { Viewer } from 'bytemd';
+
+	let value;
+
+	onMount(async () => {
+		const reader = new FileReader;
+		value = await fetch("https://hackmd.io/e3f8nAf-Ru6P5QoxhyHkdw").then(async (r) => {
+			return reader.readAsText(await r.blob(), "utf-8");
+		})
+	});
 </script>
 
 <div class="top-0 left-0 min-h-screen h-full flex flex-col items-center gap-16 px-8">
@@ -15,6 +29,7 @@
 		Front-end Developer <span class="text-grayWhite">&</span><br />
 		Minecraft Plugin Developer<span class="text-grayWhite">.</span>
 	</h1>
+	<Viewer value={value} plugins={plugins} />
 	<ProjectArrowLink />
 </div>
 <ParallaxBackground />
