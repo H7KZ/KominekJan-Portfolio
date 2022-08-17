@@ -25,7 +25,7 @@
 			<img
 				alt="contact_pic"
 				class="h-full object-cover hidden rounded-2xl lg:block"
-				src="contact/contact.webp"
+				src="https://github.com/H7KZ/portfolio-cms/blob/287578e96a10b1b781ff72655dbbfc1b40dea516/contact/contact.webp"
 			/>
 		</div>
 	</div>
