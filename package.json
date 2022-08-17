@@ -45,6 +45,7 @@
 		"@bytemd/plugin-mermaid": "^1.17.2",
 		"bytemd": "^1.17.2",
 		"chart.js": "^3.8.0",
+		"gatsby": "^2.19.38",
 		"vite": "^3.0.4"
 	}
 }
