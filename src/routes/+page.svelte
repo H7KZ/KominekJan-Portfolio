@@ -15,7 +15,7 @@
 		<Homepage />
 	</section>
 
-	<section class="pt-16" id="about">
+	<section class="pt-6" id="about">
 		<About />
 	</section>
 

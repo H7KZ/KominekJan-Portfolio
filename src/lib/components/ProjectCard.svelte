@@ -4,6 +4,7 @@
 	export let title = '';
 	export let description = '';
 	export let link = '';
+	export let linkName = '';
 </script>
 
 <div class="font-ms bg-[#292929] transition-all hover:scale-105">
@@ -24,7 +25,7 @@
 			</p>
 			{#if link}
 				<a href={link} class="text-sm text-grayWhite">
-					<span class="underline text-YellowGreen">{link.split('//')[1]}</span>
+					<span class="underline text-YellowGreen">{linkName}</span>
 				</a>
 			{/if}
 		</div>

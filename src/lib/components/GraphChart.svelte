@@ -1,19 +1,28 @@
-<!--suppress TypeScriptUnresolvedFunction -->
 <script lang="ts">
 	import Chart from 'chart.js/auto/auto.js';
+	import skillDatabackup from '$lib/data/skills.json';
 
 	import { onMount } from 'svelte';
 
-	import skillList from '$lib/data/skills';
-
-	let skillLabels = [];
+	let skillNames = [];
 	let skillData = [];
-	skillList.forEach((skill) => {
-		skillLabels.push(skill.technology);
-		skillData.push(skill.points);
-	});
 
-	onMount(() => {
+	onMount(async () => {
+		await fetch('https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/skills/skills.json')
+		.then((response) => response.json())
+		.then((data) => {
+			data.forEach((skill) => {
+				skillNames.push(skill.skill);
+				skillData.push(skill.points);
+			});
+		})
+		.catch(() => {
+			skillDatabackup.forEach((skill) => {
+				skillNames.push(skill.skill);
+				skillData.push(skill.points);
+			});
+		})
+
 		let grd = document
 			.getElementById('chart')
 			.getContext('2d')
@@ -25,7 +34,7 @@
 		new Chart(document.getElementById('chart'), {
 			type: 'radar',
 			data: {
-				labels: skillLabels,
+				labels: skillNames,
 				datasets: [
 					{
 						label: 'Skills',

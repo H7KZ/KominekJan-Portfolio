@@ -1,6 +1,6 @@
-<a href="/#projects">
+<a href="/#projects" class="animate-bounce">
 	<div
-		class="flex flex-col items-center gap-1 font-ms font-medium text-sm text-grayWhite transform transition-all md:text-base hover:translate-y-2"
+		class="flex flex-col items-center gap-1 font-ms font-medium text-sm text-grayWhite"
 	>
 		<h3 class="text-center">See my projects</h3>
 		<!--suppress HtmlDeprecatedAttribute -->
