@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang='ts'>
 	import Chart from 'chart.js/auto/auto.js';
 	import skillDatabackup from '$lib/data/skills.json';
 
@@ -9,19 +9,19 @@
 
 	onMount(async () => {
 		await fetch('https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/skills/skills.json')
-		.then((response) => response.json())
-		.then((data) => {
-			data.forEach((skill) => {
-				skillNames.push(skill.skill);
-				skillData.push(skill.points);
+			.then((response) => response.json())
+			.then((data) => {
+				data.forEach((skill) => {
+					skillNames.push(skill.skill);
+					skillData.push(skill.points);
+				});
+			})
+			.catch(() => {
+				skillDatabackup.forEach((skill) => {
+					skillNames.push(skill.skill);
+					skillData.push(skill.points);
+				});
 			});
-		})
-		.catch(() => {
-			skillDatabackup.forEach((skill) => {
-				skillNames.push(skill.skill);
-				skillData.push(skill.points);
-			});
-		})
 
 		let grd = document
 			.getElementById('chart')
@@ -88,6 +88,6 @@
 	});
 </script>
 
-<div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96">
-	<canvas id="chart" />
+<div class='w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96'>
+	<canvas id='chart' />
 </div>

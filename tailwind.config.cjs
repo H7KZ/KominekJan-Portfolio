@@ -7,8 +7,8 @@ module.exports = {
 			YellowGreen: '#cbff6a'
 		},
 		fontFamily: {
-			ms: "'Montserrat', 'sans-serif'",
-			op: "'Open sans', 'sans-serif'"
+			ms: '\'Montserrat\', \'sans-serif\'',
+			op: '\'Open sans\', \'sans-serif\''
 		}
 	},
 	plugins: []
