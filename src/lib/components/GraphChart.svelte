@@ -1,37 +1,44 @@
-<!--suppress TypeScriptUnresolvedFunction -->
-<script lang="ts">
-	import Chart from 'chart.js/auto/auto.js';
+<script lang='ts'>
+	import Chart from 'chart.js/auto/auto';
+	import skillDatabackup from '$lib/data/skills.json';
 
 	import { onMount } from 'svelte';
 
-	import skillList from '$lib/data/skills';
-
-	let skillLabels = [];
+	let skillNames = [];
 	let skillData = [];
-	skillList.forEach((skill) => {
-		skillLabels.push(skill.technology);
-		skillData.push(skill.points);
-	});
 
-	onMount(() => {
-		let grd = document
-			.getElementById('chart')
-			.getContext('2d')
-			.createLinearGradient(0, 150, 150, 0);
+	let ctx: HTMLCanvasElement;
 
-		grd.addColorStop(0, '#EFFF3A');
-		grd.addColorStop(1, '#00ffc3d2');
+	onMount(async () => {
+		await fetch('https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/skills/skills.json')
+			.then((response) => response.json())
+			.then((data) => {
+				data.forEach((skill) => {
+					skillNames.push(skill.skill);
+					skillData.push(skill.points);
+				});
+			})
+			.catch(() => {
+				skillDatabackup.forEach((skill) => {
+					skillNames.push(skill.skill);
+					skillData.push(skill.points);
+				});
+			});
 
-		new Chart(document.getElementById('chart'), {
+		let gradient = ctx.getContext('2d').createLinearGradient(0, 150, 150, 0);
+		gradient.addColorStop(0, '#EFFF3A');
+		gradient.addColorStop(1, '#00ffc3d2');
+
+		new Chart(ctx, {
 			type: 'radar',
 			data: {
-				labels: skillLabels,
+				labels: skillNames,
 				datasets: [
 					{
 						label: 'Skills',
 						data: skillData,
 						backgroundColor: '#00000000',
-						borderColor: grd,
+						borderColor: gradient,
 						pointBackgroundColor: '#EFFF3A',
 						pointHoverBorderColor: '#EFFF3A',
 						pointRadius: 0
@@ -79,6 +86,6 @@
 	});
 </script>
 
-<div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96">
-	<canvas id="chart" />
+<div class='w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96'>
+	<canvas bind:this={ctx} id='chart'></canvas>
 </div>

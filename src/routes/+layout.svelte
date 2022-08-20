@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang='ts'>
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
@@ -10,7 +10,7 @@
 </div>
 
 <style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 </style>
