@@ -1,11 +1,13 @@
 <script lang='ts'>
-	import Chart from 'chart.js/auto/auto.js';
+	import Chart from 'chart.js/auto/auto';
 	import skillDatabackup from '$lib/data/skills.json';
 
 	import { onMount } from 'svelte';
 
 	let skillNames = [];
 	let skillData = [];
+
+	let ctx: HTMLCanvasElement;
 
 	onMount(async () => {
 		await fetch('https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/skills/skills.json')
@@ -23,15 +25,11 @@
 				});
 			});
 
-		let grd = document
-			.getElementById('chart')
-			.getContext('2d')
-			.createLinearGradient(0, 150, 150, 0);
+		let gradient = ctx.getContext('2d').createLinearGradient(0, 150, 150, 0);
+		gradient.addColorStop(0, '#EFFF3A');
+		gradient.addColorStop(1, '#00ffc3d2');
 
-		grd.addColorStop(0, '#EFFF3A');
-		grd.addColorStop(1, '#00ffc3d2');
-
-		new Chart(document.getElementById('chart'), {
+		new Chart(ctx, {
 			type: 'radar',
 			data: {
 				labels: skillNames,
@@ -40,7 +38,7 @@
 						label: 'Skills',
 						data: skillData,
 						backgroundColor: '#00000000',
-						borderColor: grd,
+						borderColor: gradient,
 						pointBackgroundColor: '#EFFF3A',
 						pointHoverBorderColor: '#EFFF3A',
 						pointRadius: 0
@@ -89,5 +87,5 @@
 </script>
 
 <div class='w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96'>
-	<canvas id='chart' />
+	<canvas bind:this={ctx} id='chart'></canvas>
 </div>
