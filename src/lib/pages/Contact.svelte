@@ -1,5 +1,5 @@
 <script>
-	import LoadingCircle from '$lib/components/loadingCircle.svelte';
+	import LoadingCircle from '$lib/components/LoadingCircle.svelte';
 
 	import contactData from '$lib/data/contact';
 

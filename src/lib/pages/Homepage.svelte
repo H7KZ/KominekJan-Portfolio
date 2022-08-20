@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LoadingCircle from '$lib/components/loadingCircle.svelte';
+	import LoadingCircle from '$lib/components/LoadingCircle.svelte';
 	import ParallaxBackground from '$lib/components/ParallaxBackground.svelte';
 	import ProjectArrowLink from '$lib/components/ProjectArrowLink.svelte';
 	import homepageBackup from '$lib/data/homepage';

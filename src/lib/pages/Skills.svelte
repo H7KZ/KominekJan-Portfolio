@@ -2,7 +2,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import GraphChart from '$lib/components/GraphChart.svelte';
 	import skillDataBackup from '$lib/data/skills.json';
-import LoadingCircle from '$lib/components/loadingCircle.svelte';
+import LoadingCircle from '$lib/components/LoadingCircle.svelte';
 
 	let skillData = [];
 
