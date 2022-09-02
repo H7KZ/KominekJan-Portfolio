@@ -3,7 +3,7 @@
 </script>
 
 <div class='flex flex-col items-center font-ms text-[#fff]'>
-	<div class='flex gap-3'>
+	<div class='flex gap-5'>
 		<FooterIcons />
 	</div>
 	<div
