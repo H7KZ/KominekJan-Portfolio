@@ -1,10 +1,10 @@
 <script lang='ts'>
 	export let image = null;
 	export let video = null;
-	export let title = '';
-	export let description = '';
-	export let link = '';
-	export let linkName = '';
+	export let title = null;
+	export let description = null;
+	export let link = null;
+	export let github = null;
 </script>
 
 <div class='font-ms bg-[#292929] transition-all hover:scale-105'>
@@ -20,14 +20,21 @@
 
 		<div class='p-2 pb-4 flex flex-col gap-2'>
 			<h1 class='font-semibold text-xl text-YellowGreen'>{title}</h1>
-			<p class='font-op text-sm text-grayWhite'>
+			<p class='pb-1 font-op text-sm text-grayWhite'>
 				{description}
 			</p>
-			{#if link}
-				<a href={link} class='text-sm text-grayWhite'>
-					<span class='underline text-YellowGreen'>{linkName}</span>
+			<div class="flex gap-4">
+				{#if github}
+					<a href={github} class='text-sm text-grayWhite transition-all hover:text-YellowGreen'>
+						<i class="fa-brands fa-github fa-xl"></i>
+					</a>
+				{/if}
+				{#if link}
+				<a href={link} class='text-sm text-grayWhite transition-all hover:text-YellowGreen'>
+					<i class="fa-solid fa-link fa-xl"></i>
 				</a>
-			{/if}
+				{/if}
+			</div>
 		</div>
 	</div>
 </div>

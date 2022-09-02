@@ -1,5 +1,6 @@
 <script lang='ts'>
 	import Header from '$lib/components/Header.svelte';
+	import LoadingCircle from '$lib/components/LoadingCircle.svelte';
 	import ProjectColumn from '$lib/components/ProjectColumn.svelte';
 
 	let loading = true;
@@ -13,6 +14,9 @@
 
 <div class='w-full flex flex-col gap-8 items-center'>
 	<Header name='my projects' />
+	{#if loading}
+		<LoadingCircle />
+	{/if}
 	<div class='w-5/6 max-w-5xl flex flex-col items-center gap-12 sm:flex-row sm:items-start'>
 		<ProjectColumn />
 	</div>
