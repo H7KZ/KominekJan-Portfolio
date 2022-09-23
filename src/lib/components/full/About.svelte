@@ -1,8 +1,8 @@
 <script lang='ts'>
-	import AboutCard from '$lib/components/AboutCard.svelte';
+	import AboutCard from '$lib/components/common/AboutCard.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import LoadingCircle from '$lib/components/LoadingCircle.svelte';
-	import aboutListBackup from '$lib/data/about.json';
+	import aboutListBackup from 'static/about/about.json';
 
 	let aboutList = [];
 
