@@ -1,0 +1,23 @@
+{
+	"header": "Interested in hiring me?",
+	"description": "I'm currently looking for new opportunities. If you're interested in working with me or hiring me, please contact me via email, Discord, LinkedIn or even Steam. Not so sure? No problem, we can discuss it. I'm always open to new ideas and opportunities.",
+	"contacts": [
+		{
+			"icon": "<i class=\"fa-brands fa-linkedin fa-2x\"></i>",
+			"href": "https://www.linkedin.com/in/jan-kom%C3%ADnek-36b4b7209"
+		},
+		{
+			"icon": "<i class=\"fa-brands fa-steam fa-2x\"></i>",
+			"href": "https://steamcommunity.com/id/H7KZ"
+		},
+		{
+			"icon": "<i class=\"fa-brands fa-discord fa-2x\"></i>",
+			"href": "https://discordapp.com/users/466867931821637632"
+		},
+		{
+			"icon": "<i class=\"fa-solid fa-envelope fa-2x\"></i>",
+			"href": "mailto:kominekjan.contact@gmail.com"
+		}
+	],
+	"picture": "https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/contact/contact.webp"
+}

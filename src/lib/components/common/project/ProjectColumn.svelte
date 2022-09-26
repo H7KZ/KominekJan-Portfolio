@@ -1,46 +1,22 @@
 <script lang='ts'>
-	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	import projectsDataListBackup from '$lib/data/projects.json';
-
-	let projectDataList = [];
+	import ProjectCard from '$lib/components/common/project/ProjectCard.svelte';
+	import projectDataList from '$lib/data/projects.json';
 
 	let projectList = [];
 
-	fetch('https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/projects/projects.json')
-		.then((response) => response.json())
-		.then((data) => {
-			projectDataList = data;
-			let projectListColumn1 = [];
+	let projectListColumn1 = [];
 
-			let projectListColumn2 = [];
+	let projectListColumn2 = [];
 
-			for (let i = 0; i < projectDataList.length; i++) {
-				if (i % 2 == 0 || i == 0) {
-					projectListColumn1.push(projectDataList[i]);
-				} else {
-					projectListColumn2.push(projectDataList[i]);
-				}
-			}
+	for (let i = 0; i < projectDataList.length; i++) {
+		if (i % 2 == 0 || i == 0) {
+			projectListColumn1.push(projectDataList[i]);
+		} else {
+			projectListColumn2.push(projectDataList[i]);
+		}
+	}
 
-			projectList = [projectListColumn1, projectListColumn2];
-		})
-		.catch(() => {
-			projectDataList = projectsDataListBackup;
-
-			let projectListColumn1 = [];
-
-			let projectListColumn2 = [];
-
-			for (let i = 0; i < projectDataList.length; i++) {
-				if (i % 2 == 0 || i == 0) {
-					projectListColumn1.push(projectDataList[i]);
-				} else {
-					projectListColumn2.push(projectDataList[i]);
-				}
-			}
-
-			projectList = [projectListColumn1, projectListColumn2];
-		});
+	projectList = [projectListColumn1, projectListColumn2];
 </script>
 
 {#each projectList as projectListColumn}

@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import MobileNavbar from '$lib/components/MobileNavbar.svelte';
+	import MobileNavbar from './MobileNavbar.svelte';
 	import NavbarLinks from './NavbarLinks.svelte';
 
 	let fillColor = '#C1C8D8';

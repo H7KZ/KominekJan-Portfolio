@@ -1,5 +1,5 @@
 <script>
-	import FooterIcons from '../../FooterIcons.svelte';
+	import FooterIcons from './FooterIcons.svelte';
 </script>
 
 <div class='flex flex-col items-center font-ms text-[#fff]'>

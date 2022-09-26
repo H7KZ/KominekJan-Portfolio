@@ -1,11 +1,13 @@
 <script lang='ts'>
-	import Homepage from '$lib/pages/Homepage.svelte';
+	import Homepage from '$lib/components/full/Homepage.svelte';
 
 	import About from '$lib/components/full/About.svelte';
 
-	import Skills from '$lib/pages/Skills.svelte';
+	import Skills from '$lib/components/full/Skills.svelte';
 
-	import Projects from '$lib/pages/Projects.svelte';
+	import Stats from '$lib/components/full/Stats.svelte';
+
+	import Projects from '$lib/components/full/Projects.svelte';
 
 	import Footer from '$lib/components/common/footer/Footer.svelte';
 </script>
@@ -21,6 +23,10 @@
 
 	<section class='pt-32' id='skills'>
 		<Skills />
+	</section>
+
+	<section class='pt-32' id='stats'>
+		<Stats />
 	</section>
 
 	<section class='pt-32' id='projects'>
