@@ -3,6 +3,11 @@
     export let value: number;
 </script>
 
-<div>
-    
+<div class="text-grayWhite">
+    <div>
+        {title}
+    </div>
+    <div>
+        {value}
+    </div>
 </div>
