@@ -32,5 +32,7 @@
 </script>
 
 <div class="w-full h-96 grid grid-flow-row">
-    <StatCard title="Servers" value={serverCount}/>
+    <StatCard title="SERVERS" value={serverCount}/>
+    <StatCard title="PLAYERS" value={playerCount}/>
+    <StatCard title="DOWNLOADS" value={downloadCount}/>
 </div>

@@ -1,10 +1,11 @@
 import { players } from '$lib/stores/store';
 
 import { watchedPlayers } from '$lib/data/stats';
+import { watchingInterval } from '$lib/data/common';
 
 export default function getPlayers() {
     getPlayersInterval();
-    setInterval(getPlayersInterval, 1000 * 60);
+    setInterval(getPlayersInterval, watchingInterval);
 }
 
 function getPlayersInterval() {

@@ -1,10 +1,17 @@
 import { servers } from '$lib/stores/store';
 
 import { watchedServers } from '$lib/data/stats';
+import { watchingInterval } from '$lib/data/common';
+
+let currentServers = 0;
+
+servers.subscribe(value => {
+    currentServers = value;
+});
 
 export default function getServers() {
     getServersInterval();
-    setInterval(getServersInterval, 1000 * 60);
+    setInterval(getServersInterval, watchingInterval);
 }
 
 function getServersInterval() {
@@ -20,7 +27,9 @@ function getServersInterval() {
 
                 record += recordOne;
 
-                servers.set(record);
+                if (currentServers < record) {
+                    servers.set(record);
+                }
             });
         });        
     });

@@ -29,7 +29,7 @@
 		<Stats />
 	</section>
 
-	<section class='pt-32' id='projects'>
+	<section class='pt-6' id='projects'>
 		<Projects />
 	</section>
 

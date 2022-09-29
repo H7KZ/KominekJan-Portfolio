@@ -1,10 +1,11 @@
 import { downloads } from '$lib/stores/store';
 
 import { watchedDownloads } from '$lib/data/stats';
+import { watchingInterval } from '$lib/data/common';
 
 export default function getDownloads() {
     getDownloadsInterval();
-    setInterval(getDownloadsInterval, 1000 * 60);
+    setInterval(getDownloadsInterval, watchingInterval);
 }
 
 function getDownloadsInterval() {
