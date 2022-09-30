@@ -25,14 +25,18 @@
 			</p>
 			<div class="flex gap-4">
 				{#if github}
-					<a href={github} class='text-sm text-grayWhite transition-all hover:text-YellowGreen'>
-						<i class="fa-brands fa-github fa-xl"></i>
-					</a>
+					{#each github as g}
+						<a href={g} class='text-sm text-grayWhite transition-all hover:text-YellowGreen'>
+							<i class="fa-brands fa-github fa-xl"></i>
+						</a>
+					{/each}
 				{/if}
 				{#if link}
-				<a href={link} class='text-sm text-grayWhite transition-all hover:text-YellowGreen'>
-					<i class="fa-solid fa-link fa-xl"></i>
-				</a>
+					{#each link as l}
+						<a href={l} class='text-sm text-grayWhite transition-all hover:text-YellowGreen'>
+							<i class="fa-solid fa-link fa-xl"></i>
+						</a>
+					{/each}
 				{/if}
 			</div>
 		</div>

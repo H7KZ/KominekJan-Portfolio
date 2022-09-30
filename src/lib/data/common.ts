@@ -1,4 +1,4 @@
-export const watchingInterval: number = 1000 * 8;
+export const watchingInterval: number = 1000 * 20;
 
-export const APIURL: string = "http://localhost:3000/";
-// "https://api.kominekjan.cz/"
+export const APIURL: string = "https://api.kominekjan.cz";
+// "http://localhost:3000"

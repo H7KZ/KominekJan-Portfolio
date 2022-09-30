@@ -5,7 +5,7 @@
 </script>
 
 <div class='w-full h-full flex flex-col gap-8'>
-	<Header name='my skills' />
+	<Header title='my skills' />
 	<div class='w-full flex flex-col gap-8 justify-center items-center sm:flex-row'>
 		<div class='w-full flex justify-center sm:w-72 sm:h-72 lg:w-96 lg:h-96'>
 			<div class='flex flex-col gap-4'>

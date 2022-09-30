@@ -5,7 +5,7 @@
 </script>
 
 <div class='flex flex-col items-center gap-12'>
-	<Header name='about' />
+	<Header title='about me' />
 	<div
 		class='grid grid-cols-1 justify-items-center gap-6 font-op font-medium text-sm text-grayWhite px-8 sm:text-base md:grid-cols-2 md:gap-10 md:w-4/5'
 	>

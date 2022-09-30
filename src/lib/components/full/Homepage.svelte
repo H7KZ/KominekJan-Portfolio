@@ -5,7 +5,9 @@
 </script>
 
 <div class='top-0 left-0 min-h-screen h-full flex flex-col items-center gap-16 px-8'>
-	{@html homepageText}
+	<div class="flex justify-center">
+		{@html homepageText}
+	</div>
+	
 	<ProjectArrowLink />
 </div>
-<ParallaxBackground />

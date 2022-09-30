@@ -1,5 +1,7 @@
 <script lang='ts'>
 	import Navbar from '$lib/components/common/navbar/Navbar.svelte';
+
+	import ParallaxBackground from '$lib/components/common/ParallaxBackground.svelte';
 </script>
 
 <div>
@@ -7,6 +9,7 @@
 		<Navbar />
 	</nav>
 	<slot />
+	<ParallaxBackground />
 </div>
 
 <style>
