@@ -5,8 +5,10 @@
 
 	onMount(() => {
 		window.addEventListener('scroll', () => {
-			let value = window.scrollY;
-			svgBg.style.top = value * 0.6 + 'px';
+			try {
+				let value = window.scrollY;
+				svgBg!.style!.top = value * 0.6 + 'px';
+			} catch (e) {}
 		});
 	});
 </script>
