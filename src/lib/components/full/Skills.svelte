@@ -1,28 +1,11 @@
 <script lang='ts'>
-	import Header from '$lib/components/Header.svelte';
-	import GraphChart from '$lib/components/GraphChart.svelte';
-	import skillDataBackup from '$lib/data/skills.json';
-	import LoadingCircle from '$lib/components/LoadingCircle.svelte';
-
-	let skillData = [];
-
-	fetch('https://raw.githubusercontent.com/H7KZ/portfolio-cms/main/skills/skills.json')
-		.then((response) => response.json())
-		.then((data) => {
-			skillData = data;
-		})
-		.catch(() => {
-			skillData = skillDataBackup;
-		});
+	import Header from '$lib/components/common/Header.svelte';
+	import GraphChart from '$lib/components/common/graph/GraphChart.svelte';
+	import skillData from '$lib/data/skills.json';
 </script>
 
 <div class='w-full h-full flex flex-col gap-8'>
-	<Header name='my skills' />
-	{#if skillData.length == 0}
-		<div class='flex items-center justify-center'>
-			<LoadingCircle />
-		</div>
-	{/if}
+	<Header title='my skills' />
 	<div class='w-full flex flex-col gap-8 justify-center items-center sm:flex-row'>
 		<div class='w-full flex justify-center sm:w-72 sm:h-72 lg:w-96 lg:h-96'>
 			<div class='flex flex-col gap-4'>

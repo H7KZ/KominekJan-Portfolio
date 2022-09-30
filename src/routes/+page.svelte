@@ -1,13 +1,17 @@
 <script lang='ts'>
-	import Homepage from '$lib/pages/Homepage.svelte';
+	import Homepage from '$lib/components/full/Homepage.svelte';
 
-	import About from '$lib/pages/About.svelte';
+	import About from '$lib/components/full/About.svelte';
 
-	import Skills from '$lib/pages/Skills.svelte';
+	import WorkExperience from '$lib/components/full/WorkExperience.svelte';
 
-	import Projects from '$lib/pages/Projects.svelte';
+	import Skills from '$lib/components/full/Skills.svelte';
 
-	import Footer from '$lib/components/Footer.svelte';
+	import Stats from '$lib/components/full/Stats.svelte';
+
+	import Projects from '$lib/components/full/Projects.svelte';
+
+	import Footer from '$lib/components/common/footer/Footer.svelte';
 </script>
 
 <div>
@@ -15,19 +19,27 @@
 		<Homepage />
 	</section>
 
-	<section class='pt-6' id='about'>
+	<section class='pt-2' id='about'>
 		<About />
 	</section>
 
-	<section class='pt-32' id='skills'>
+	<section>
+		<WorkExperience />
+	</section>
+
+	<section class='pt-40' id='skills'>
 		<Skills />
 	</section>
 
-	<section class='pt-32' id='projects'>
+	<section class='pt-40' id='stats'>
+		<Stats />
+	</section>
+
+	<section class='pt-40' id='projects'>
 		<Projects />
 	</section>
 
-	<section class='pt-24'>
+	<section class='pt-28'>
 		<Footer />
 	</section>
 </div>
