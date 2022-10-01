@@ -1,8 +1,9 @@
-<script lang='ts'>
+<!--suppress JSUnresolvedVariable -->
+<script lang="ts">
 	import ProjectCard from '$lib/components/common/project/ProjectCard.svelte';
 	import projectDataList from '$lib/data/projects.json';
 
-	let projectList = [];
+	let projectList: any[];
 
 	let projectListColumn1 = [];
 
@@ -20,7 +21,7 @@
 </script>
 
 {#each projectList as projectListColumn}
-	<div class='flex flex-col gap-12 w-5/6 sm:w-1/2'>
+	<div class="flex flex-col gap-12 w-full sm:w-1/2">
 		{#each projectListColumn as project}
 			<ProjectCard
 				image={project.image}

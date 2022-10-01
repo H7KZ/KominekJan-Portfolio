@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import Homepage from '$lib/components/full/Homepage.svelte';
 
 	import About from '$lib/components/full/About.svelte';
@@ -15,11 +15,11 @@
 </script>
 
 <div>
-	<section class='pt-48 md:pt-56' id='home'>
+	<section class="pt-48 md:pt-56" id="home">
 		<Homepage />
 	</section>
 
-	<section class='pt-2' id='about'>
+	<section class="pt-2" id="about">
 		<About />
 	</section>
 
@@ -27,19 +27,19 @@
 		<WorkExperience />
 	</section>
 
-	<section class='pt-40' id='skills'>
+	<section class="pt-40" id="skills">
 		<Skills />
 	</section>
 
-	<section class='pt-40' id='stats'>
+	<section class="pt-40" id="stats">
 		<Stats />
 	</section>
 
-	<section class='pt-40' id='projects'>
+	<section class="pt-40" id="projects">
 		<Projects />
 	</section>
 
-	<section class='pt-28'>
+	<section class="pt-28">
 		<Footer />
 	</section>
 </div>

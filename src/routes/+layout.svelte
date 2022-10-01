@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import Navbar from '$lib/components/common/navbar/Navbar.svelte';
 
 	import ParallaxBackground from '$lib/components/common/ParallaxBackground.svelte';
@@ -13,7 +13,7 @@
 </div>
 
 <style>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
 </style>

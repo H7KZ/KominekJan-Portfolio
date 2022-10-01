@@ -1,18 +1,14 @@
 [
 	{
 		"icon": "about/me.svg",
-		"text": "Hello, I am a <span class=\"text-YellowGreen\">freelance Full-stack Web Developer</span>, <span class=\"text-YellowGreen\">Minecraft Plugin Developer</span> and <span class=\"text-YellowGreen\">student of Cyber Security at SSPŠ</span>."
+		"text": "Hello, my name is <span class=\"text-YellowGreen\">Jan Komínek</span> and I am an <span class=\"text-YellowGreen\">open-minded entrepreneur that focuses on full-stack web & minecraft plugin development</span>. In parallel I am <span class=\"text-YellowGreen\">studying cyber security at high school SSPŠaG</span>."
 	},
 	{
 		"icon": "about/code.svg",
-		"text": "As a <span class=\"text-YellowGreen\">Full-stack Web Developer</span> I have <span class=\"text-YellowGreen\">~2 year experience in HTML, CSS, JS</span>. And <span class=\"text-YellowGreen\">~1 year experience in tailwindCSS, TypeScript, ExpressJS and framework SvelteKit</span>. I can fairly say that I am <span class=\"text-YellowGreen\">able to create any website the client has in mind</span>."
+		"text": "<span class=\"text-YellowGreen\">My interest in web development started in 2020</span>, since then I have <span class=\"text-YellowGreen\">learned every aspect of front-end web development</span> and I have been constantly learning new technologies. I have <span class=\"text-YellowGreen\">great experience in HTML, CSS, TailwindCSS, JavaScript, TypeScript, SvelteKit</span>. </br>&emsp;&ensp;Coming <span class=\"text-YellowGreen\">year 2021 I started with back-end development</span> where I learned <span class=\"text-YellowGreen\">the basics of REST API</span> and also <span class=\"text-YellowGreen\">spiced up my experience in JavaScript and TypeScript</span>. </br>&emsp;&ensp;Today I am able to <span class=\"text-YellowGreen\">create a full-stack web project that uses the latest and fastest technologies</span> that give full satisfaction and interactivity to users."
 	},
 	{
 		"icon": "about/java.svg",
-		"text": "In <span class=\"text-YellowGreen\">Minecraft Plugin Development</span> I have <span class=\"text-YellowGreen\">~1 year experience of Java and Spigot API</span>. I enjoy <span class=\"text-YellowGreen\">working on smaller / medium size plugins</span>."
-	},
-	{
-		"icon": "about/book.svg",
-		"text": "Right now <span class=\"text-YellowGreen\">I am studying a 3rd year of IT/Cyber Security at high school</span> in the Czech Republic. In this school <span class=\"text-YellowGreen\">I learned of programming language C#, PC Hardware, Linux, Bash scripting</span>."
+		"text": "The game Minecraft I have been playing for years and years really without knowing what was going on in the background then I realized that <span class=\"text-YellowGreen\">I want to create different things that do not exist</span> as I imagine them. So <span class=\"text-YellowGreen\">in the year 2021 I started the learning curve of minecraft plugins, Spigot API and Java</span>. </br>&emsp;&ensp;I have been in the minecraft plugin scene ever since <span class=\"text-YellowGreen\">creating fun and useful plugins</span> for users to use freely."
 	}
 ]

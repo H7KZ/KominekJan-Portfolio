@@ -17,22 +17,14 @@
 		"title": "Extraordinary Gifts",
 		"description": "Minecraft plugin that implements creation of gifts. It has built-in GUI and more extended configuration than other plugins. It is the perfect solution for survival servers that want to spice up their gameplay.",
 		"video": "projects/extraordinaryGifts.mp4",
-		"link": [
-			"https://www.spigotmc.org/resources/extraordinarygifts-1-16-1-19.103226/"
-		],
-		"github": [
-			"https://github.com/H7KZ/ExtraordinaryGifts"
-		]
+		"link": ["https://www.spigotmc.org/resources/extraordinarygifts-1-16-1-19.103226/"],
+		"github": ["https://github.com/H7KZ/ExtraordinaryGifts"]
 	},
 	{
 		"title": "Diamond Nuggets V2",
 		"description": "Fork from already existing Diamond Nuggets plugin. It is a plugin that allows players to create diamond nuggets. I only added more customization and fixed some bugs.",
 		"image": "projects/diamond_nuggets.png",
-		"link": [
-			"https://www.spigotmc.org/resources/diamond-nuggets-v2-1-19-1-19-2.104677/"
-		],
-		"github": [
-			"https://github.com/H7KZ/DiamondNuggetsV2"
-		]
+		"link": ["https://www.spigotmc.org/resources/diamond-nuggets-v2-1-19-1-19-2.104677/"],
+		"github": ["https://github.com/H7KZ/DiamondNuggetsV2"]
 	}
 ]
