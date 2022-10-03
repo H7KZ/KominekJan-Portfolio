@@ -1,23 +1,39 @@
-<!--suppress JSUnresolvedVariable -->
 <script lang="ts">
-	import ProjectCard from '$lib/components/common/project/ProjectCard.svelte';
-	import projectDataList from '$lib/data/projects.json';
+	import { onMount } from 'svelte';
 
-	let projectList: any[];
+	import Axios from 'axios';
+
+	import ProjectCard from '$lib/components/common/project/ProjectCard.svelte';
+	import projectListBackup from '$lib/data/projects.json';
+	import { APIURL } from '$lib/data/common';
+
+	let projectListData: any = projectListBackup;
+
+	let projectList: any = [];
 
 	let projectListColumn1 = [];
 
 	let projectListColumn2 = [];
 
-	for (let i = 0; i < projectDataList.length; i++) {
-		if (i % 2 == 0 || i == 0) {
-			projectListColumn1.push(projectDataList[i]);
-		} else {
-			projectListColumn2.push(projectDataList[i]);
-		}
-	}
+	onMount(async () => {
+		await Axios.get(APIURL + "/data/projects")
+		.then((res: any) => {
+			projectListData = res.data;
+		})
+		.catch(() => {
+			projectListData = projectListBackup;
+		});
 
-	projectList = [projectListColumn1, projectListColumn2];
+		for (let i = 0; i < projectListData.length; i++) {
+			if (i % 2 == 0 || i == 0) {
+				projectListColumn1.push(projectListData[i]);
+			} else {
+				projectListColumn2.push(projectListData[i]);
+			}
+		}
+
+		projectList = [projectListColumn1, projectListColumn2];
+	});
 </script>
 
 {#each projectList as projectListColumn}

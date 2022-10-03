@@ -1,5 +1,22 @@
 <script lang="ts">
-	import contactData from '$lib/data/contact.json';
+	import { onMount } from 'svelte';
+
+	import Axios from 'axios';
+	
+	import contactBackup from '$lib/data/contact.json';
+	import { APIURL } from '$lib/data/common';
+	
+	let contactData: any = contactBackup;
+	
+	onMount(async () => {
+		await Axios.get(APIURL + "/data/contact")
+		.then((res: any) => {
+			contactData = res.data;
+		})
+		.catch(() => {
+			contactData = contactBackup;
+		});
+	});
 </script>
 
 <div class="h-full min-h-screen w-full flex flex-col items-center justify-center">

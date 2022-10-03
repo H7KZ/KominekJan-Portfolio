@@ -1,23 +1,40 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	import Axios from 'axios';
+
 	import AboutCard from '$lib/components/common/about/AboutCard.svelte';
 	import Header from '$lib/components/common/Header.svelte';
-	import aboutListText from '$lib/data/about.json';
+	import aboutListBackup from '$lib/data/about.json';
+	import { APIURL } from '$lib/data/common';
+	
+	let aboutListData: any = aboutListBackup;
 
-	let aboutList: any[];
+	let aboutList: any = [];
 
 	let aboutCol1 = [];
 
 	let aboutCol2 = [];
 
-	for (let i = 0; i < aboutListText.length; i++) {
-		if (i % 2 == 0 || i == 0) {
-			aboutCol1.push(aboutListText[i]);
-		} else {
-			aboutCol2.push(aboutListText[i]);
-		}
-	}
+	onMount(async () => {
+		await Axios.get(APIURL + "/data/about")
+		.then((res: any) => {
+			aboutListData = res.data;
+		})
+		.catch(() => {
+			aboutListData = aboutListBackup;
+		});
 
-	aboutList = [aboutCol1, aboutCol2];
+		for (let i = 0; i < aboutListData.length; i++) {
+			if (i % 2 == 0 || i == 0) {
+				aboutCol1.push(aboutListData[i]);
+			} else {
+				aboutCol2.push(aboutListData[i]);
+			}
+		}
+
+		aboutList = [aboutCol1, aboutCol2];
+	});
 </script>
 
 <div class="w-full flex flex-col items-center gap-12">

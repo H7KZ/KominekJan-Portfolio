@@ -1,19 +1,31 @@
-<!--suppress ALL -->
 <script lang="ts">
-	import Chart from 'chart.js/auto/auto';
-	import skillDataD from '$lib/data/skills.json';
-
 	import { onMount } from 'svelte';
 
+	import Axios from 'axios';
+
+	import Chart from 'chart.js/auto/auto';
+	import skillBackup from '$lib/data/skills.json';
+	import { APIURL } from '$lib/data/common';
+
+	let skillData: any = skillBackup;
+
 	let skillNames = [];
-	let skillData = [];
+	let skillList = [];
 
 	let ctx: HTMLCanvasElement;
 
 	onMount(async () => {
-		skillDataD.forEach((skill) => {
+		await Axios.get(APIURL + "/data/skills")
+		.then((res: any) => {
+			skillData = res.data;
+		})
+		.catch(() => {
+			skillData = skillBackup;
+		});
+
+		skillData.forEach((skill: { skill: any; points: any; }) => {
 			skillNames.push(skill.skill);
-			skillData.push(skill.points);
+			skillList.push(skill.points);
 		});
 
 		let gradient = ctx.getContext('2d').createLinearGradient(0, 150, 150, 0);
@@ -27,7 +39,7 @@
 				datasets: [
 					{
 						label: 'Skills',
-						data: skillData,
+						data: skillList,
 						backgroundColor: '#00000000',
 						borderColor: gradient,
 						pointBackgroundColor: '#EFFF3A',

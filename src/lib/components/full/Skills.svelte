@@ -1,7 +1,24 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	import Axios from 'axios';
+
 	import Header from '$lib/components/common/Header.svelte';
 	import GraphChart from '$lib/components/common/graph/GraphChart.svelte';
-	import skillData from '$lib/data/skills.json';
+	import skillBackup from '$lib/data/skills.json';
+	import { APIURL } from '$lib/data/common';
+	
+	let skillData: any = skillBackup;
+	
+	onMount(async () => {
+		await Axios.get(APIURL + "/data/skills")
+		.then((res: any) => {
+			skillData = res.data;
+		})
+		.catch(() => {
+			skillData = skillBackup;
+		});
+	});
 </script>
 
 <div class="w-full h-full flex flex-col gap-8">
