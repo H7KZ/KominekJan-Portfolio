@@ -7,6 +7,7 @@
 	import Header from '$lib/components/common/Header.svelte';
 	import aboutListBackup from '$lib/data/about.json';
 	import { APIURL } from '$lib/data/common';
+	import Loading from '$lib/components/common/Loading.svelte';
 	
 	let aboutListData: any = aboutListBackup;
 
@@ -16,13 +17,17 @@
 
 	let aboutCol2 = [];
 
+	let loaded = false;
+
 	onMount(async () => {
 		await Axios.get(APIURL + "/data/about")
 		.then((res: any) => {
 			aboutListData = res.data;
+			loaded = true;
 		})
 		.catch(() => {
 			aboutListData = aboutListBackup;
+			loaded = true;
 		});
 
 		for (let i = 0; i < aboutListData.length; i++) {
@@ -39,6 +44,8 @@
 
 <div class="w-full flex flex-col items-center gap-12">
 	<Header title="about me" />
+
+	<Loading loading={loaded} />
 	
 	<div class="flex flex-col gap-12 font-op font-medium text-sm text-grayWhite md:px-8 sm:text-base md:flex-row md:justify-center md:gap-16">
 		{#each aboutList as aboutListColumn}

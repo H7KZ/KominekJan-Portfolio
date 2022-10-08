@@ -7,22 +7,29 @@
 	import GraphChart from '$lib/components/common/graph/GraphChart.svelte';
 	import skillBackup from '$lib/data/skills.json';
 	import { APIURL } from '$lib/data/common';
+	import Loading from '$lib/components/common/Loading.svelte';
 	
 	let skillData: any = skillBackup;
+
+	let loaded = false;
 	
 	onMount(async () => {
 		await Axios.get(APIURL + "/data/skills")
 		.then((res: any) => {
 			skillData = res.data;
+			loaded = true;
 		})
 		.catch(() => {
 			skillData = skillBackup;
+			loaded = true;
 		});
 	});
 </script>
 
 <div class="w-full h-full flex flex-col gap-8">
 	<Header title="my skills" />
+
+	<Loading loading={loaded} />
 	
 	<div class="w-full flex flex-col gap-8 justify-center items-center sm:flex-row">
 		<div class="w-full flex justify-center sm:w-72 sm:h-72 lg:w-96 lg:h-96">

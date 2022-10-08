@@ -2,11 +2,14 @@
 	import Axios from 'axios';
 	import { APIURL, watchingInterval } from '$lib/data/common';
 	import { onMount } from 'svelte';
+	import Loading from '$lib/components/common/Loading.svelte';
 
 	export let title: string;
 	export let url: string;
 
 	let value: number = 0;
+
+	let loaded = false;
 
 	onMount(() => {
 		getInterval();
@@ -22,12 +25,16 @@
 		await Axios.get(APIURL + url)
 			.then((res) => {
 				value = res.data;
+				loaded = true;
 			})
 			.catch(() => {
 				value = 0;
+				loaded = true;
 			});
 	}
 </script>
+
+<Loading loading={loaded} />
 
 <div class="w-full flex flex-col justify-center items-center text-grayWhite">
 	<div class="w-full flex flex-col items-center text-4xl md:text-5xl">

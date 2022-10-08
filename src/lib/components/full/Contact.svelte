@@ -5,21 +5,28 @@
 	
 	import contactBackup from '$lib/data/contact.json';
 	import { APIURL } from '$lib/data/common';
+	import Loading from '$lib/components/common/Loading.svelte';
 	
 	let contactData: any = contactBackup;
+
+	let loaded = false;
 	
 	onMount(async () => {
 		await Axios.get(APIURL + "/data/contact")
 		.then((res: any) => {
 			contactData = res.data;
+			loaded = true;
 		})
 		.catch(() => {
 			contactData = contactBackup;
+			loaded = true;
 		});
 	});
 </script>
 
 <div class="h-full min-h-screen w-full flex flex-col items-center justify-center">
+	<Loading loading={loaded} />
+	
 	<div class="w-3/4 h-full mb-72 flex flex-col items-start gap-4 sm:w-7/12 lg:w-2/3 xl:w-1/2">
 		<h1 class="font-ms font-bold text-4xl bg-gradient-to-r from-[#EFFF3A] to-[#00ffc3d2] text-[#fff0] bg-clip-text uppercase md:text-5xl xl:text-6xl">
 			{contactData.header}

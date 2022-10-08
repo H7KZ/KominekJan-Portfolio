@@ -6,6 +6,7 @@
 	import Chart from 'chart.js/auto/auto';
 	import skillBackup from '$lib/data/skills.json';
 	import { APIURL } from '$lib/data/common';
+	import Loading from '$lib/components/common/Loading.svelte';
 
 	let skillData: any = skillBackup;
 
@@ -14,13 +15,17 @@
 
 	let ctx: HTMLCanvasElement;
 
+	let loaded = false;
+
 	onMount(async () => {
 		await Axios.get(APIURL + "/data/skills")
 		.then((res: any) => {
 			skillData = res.data;
+			loaded = true;
 		})
 		.catch(() => {
 			skillData = skillBackup;
+			loaded = true;
 		});
 
 		skillData.forEach((skill: { skill: any; points: any; }) => {
@@ -90,5 +95,6 @@
 </script>
 
 <div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96">
+	<Loading loading={loaded} />
 	<canvas bind:this={ctx} id="chart"></canvas>
 </div>

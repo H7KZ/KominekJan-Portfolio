@@ -6,6 +6,7 @@
 	import ProjectCard from '$lib/components/common/project/ProjectCard.svelte';
 	import projectListBackup from '$lib/data/projects.json';
 	import { APIURL } from '$lib/data/common';
+	import Loading from '$lib/components/common/Loading.svelte';
 
 	let projectListData: any = projectListBackup;
 
@@ -15,13 +16,17 @@
 
 	let projectListColumn2 = [];
 
+	let loaded = false;
+
 	onMount(async () => {
 		await Axios.get(APIURL + "/data/projects")
 		.then((res: any) => {
 			projectListData = res.data;
+			loaded = true;
 		})
 		.catch(() => {
 			projectListData = projectListBackup;
+			loaded = true;
 		});
 
 		for (let i = 0; i < projectListData.length; i++) {
@@ -35,6 +40,8 @@
 		projectList = [projectListColumn1, projectListColumn2];
 	});
 </script>
+
+<Loading loading={loaded} />
 
 {#each projectList as projectListColumn}
 	<div class="flex flex-col gap-12 w-full sm:w-1/2">
