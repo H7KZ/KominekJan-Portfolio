@@ -1,15 +1,14 @@
 <script lang="ts">
 	import Navbar from '$lib/components/common/navbar/Navbar.svelte';
 
-	import ParallaxBackground from '$lib/components/common/ParallaxBackground.svelte';
+	import Development from '$lib/components/full/Development.svelte';
 </script>
 
 <div>
 	<nav>
 		<Navbar />
 	</nav>
-	<slot />
-	<ParallaxBackground />
+	<Development />
 </div>
 
 <style>
